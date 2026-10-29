@@ -1,0 +1,24 @@
+Last login: Thu Oct 22 12:15:51 on ttys000
+
+~ > cd Desktop/TP1\ -\ Fundamentos\ de\ Desenvolvimento\ com\ Java/Exercicio\ 2
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > ls
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > pwd
+/Users/muriloportopereira/Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > touch exercicio2.txt
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > cat > exercicio2.txt
+O arquivo .java e onde fica o codigo que escrevemos e podemos editar.
+Quando usamos o javac, ele compila esse codigo e gera um arquivo .class.
+O arquivo .class possui bytecode, que e uma forma intermediaria do programa.
+A JVM funciona como um motor que entende o bytecode e executa o programa.
+Cada sistema operacional possui uma JVM compativel para executar o bytecode.
+Por isso, o mesmo arquivo .class pode rodar no Windows, Linux ou macOS.
+O javac cria o arquivo .class, enquanto o comando java usa a JVM para executa-lo.        
+^C
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > open exercicio2.txt 
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 2 on git:master !+? > 

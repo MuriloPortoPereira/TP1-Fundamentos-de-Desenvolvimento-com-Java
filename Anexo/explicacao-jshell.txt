@@ -1,0 +1,19 @@
+O QUE E O JSHELL
+
+O JShell e uma ferramenta do Java usada no terminal para testar pequenos
+trechos de codigo de forma rapida. Com ele, nao e necessario criar um arquivo
+.java, uma classe ou o metodo main para fazer um teste simples.
+
+No JShell, digitamos um comando e recebemos o resultado logo em seguida. Por
+exemplo, podemos criar uma variavel, fazer uma conta ou comparar dois valores.
+Isso ajuda a entender o funcionamento do codigo antes de criar um programa
+completo.
+
+No exercicio, o JShell foi usado para declarar variaveis de tipos primitivos,
+como int, double e boolean. Tambem foi usado para testar operadores
+aritmeticos, como multiplicacao e soma, e um operador relacional, como maior
+que.
+
+A diferenca e que o JShell serve para testes rapidos, enquanto o javac compila
+um arquivo .java e gera um arquivo .class. Depois, o comando java executa o
+arquivo .class usando a JVM.

@@ -1,0 +1,21 @@
+# Arquivos do macOS
+.DS_Store
+
+# IntelliJ IDEA e outros metadados locais de IDE
+.idea/
+*.iml
+
+# Arquivos gerados pela compilação
+*.class
+out/
+build/
+
+# Saída temporária de verificações locais
+.verificacao/
+.superpowers/
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.temp
+*~

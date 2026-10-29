@@ -1,0 +1,30 @@
++---------+--------------------------------+---------------+
+| Sistema | Selecionar Java 21             | Abrir JShell  |
++---------+--------------------------------+---------------+
+| macOS   | Configurar JAVA_HOME           | jshell        |
+| Linux   | Escolher o JDK 21 instalado    | jshell        |
+| Windows | Configurar JAVA_HOME e Path    | jshell        |
++---------+--------------------------------+---------------+
+
+
+macOS
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+jshell
+
+
+Linux
+
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+jshell
+
+Escolha a opcao que menciona Java 21 nas duas listas.
+
+
+Windows - PowerShell
+
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21"
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+jshell

@@ -1,0 +1,30 @@
+JAVA 21 NO WINDOWS - POWERSHELL
+
+1. Listar as pastas de JDK do Eclipse Adoptium:
+
+Get-ChildItem "C:\Program Files\Eclipse Adoptium"
+
+Exemplo de resultado:
+
+jdk-21.0.13.11-hotspot
+jdk-26.0.2.10-hotspot
+
+2. Escolher a pasta que possui JDK 21 e configurar somente a sessao atual:
+
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.13.11-hotspot"
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+
+3. Conferir a escolha:
+
+java -version
+javac -version
+jshell --version
+
+Os tres comandos devem mostrar a versao 21.
+
+4. Abrir o JShell:
+
+jshell
+
+Observacao: o nome da pasta do JDK pode mudar conforme a versao instalada.
+Use sempre o nome que apareceu no comando Get-ChildItem.

@@ -1,0 +1,7 @@
+O arquivo .java e onde fica o codigo que escrevemos e podemos editar.
+Quando usamos o javac, ele compila esse codigo e gera um arquivo .class.
+O arquivo .class possui bytecode, que e uma forma intermediaria do programa.
+A JVM funciona como um motor que entende o bytecode e executa o programa.
+Cada sistema operacional possui uma JVM compativel para executar o bytecode.
+Por isso, o mesmo arquivo .class pode rodar no Windows, Linux ou macOS.
+O javac cria o arquivo .class, enquanto o comando java usa a JVM para executa-lo.

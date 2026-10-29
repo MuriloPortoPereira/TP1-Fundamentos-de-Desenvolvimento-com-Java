@@ -1,0 +1,32 @@
+JAVA 21 NO MACOS
+
+1. Listar as versoes de Java instaladas:
+
+/usr/libexec/java_home -V
+
+2. No resultado, procure a linha da versao desejada. No meu exemplo:
+
+21.0.13 ... /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
+
+3. Copie o caminho e selecione esse Java apenas para a janela atual:
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+4. Conferir se a escolha esta certa:
+
+java -version
+javac -version
+jshell --version
+
+Os tres comandos devem mostrar a versao 21.
+
+5. Abrir o JShell:
+
+jshell
+
+Forma automatica de escolher qualquer Java 21 instalado:
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+export PATH="$JAVA_HOME/bin:$PATH"
+

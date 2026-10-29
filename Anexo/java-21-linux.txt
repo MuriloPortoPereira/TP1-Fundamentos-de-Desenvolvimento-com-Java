@@ -1,0 +1,39 @@
+JAVA 21 NO LINUX
+
+1. Listar os caminhos Java conhecidos pelo sistema:
+
+update-alternatives --list java
+
+Exemplo de resultado:
+
+/usr/lib/jvm/java-21-temurin/bin/java
+/usr/lib/jvm/java-26-openjdk/bin/java
+
+2. Para selecionar o Java 21 como padrao do sistema:
+
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+O sistema mostrara opcoes numeradas. Digite o numero da opcao com Java 21.
+
+3. Para usar Java 21 somente na janela atual do terminal, use a pasta que
+aparece antes de /bin/java. Neste exemplo:
+
+export JAVA_HOME="/usr/lib/jvm/java-21-temurin"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+4. Conferir a escolha:
+
+java -version
+javac -version
+jshell --version
+
+Os tres comandos devem mostrar a versao 21.
+
+5. Abrir o JShell:
+
+jshell
+
+Observacao: o caminho pode mudar de acordo com a distribuicao Linux e com a
+forma de instalacao. Use sempre o caminho mostrado no seu computador.
+

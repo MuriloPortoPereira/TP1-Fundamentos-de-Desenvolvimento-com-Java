@@ -1,0 +1,355 @@
+---------  Sessão do Terminal --------- 
+
+
+Last login: Tue Oct 27 11:16:22 on ttys001
+
+~ > jshell
+|  Welcome to JShell -- Version 26.0.2
+|  For an introduction type: /help intro
+
+jshell> int idade = 20;
+idade ==> 20
+
+jshell> int idadeMinima = 18;
+idadeMinima ==> 18
+
+jshell> boolean podeEntrar = idade >= idadeMinima;
+podeEntrar ==> true
+
+jshell> System.out.println("Idade informada: " + idade);
+Idade informada: 20
+
+jshell> System.out.println("Pode entrar: " + podeEntrar);
+Pode entrar: true
+
+jshell>
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- 1. Código Desenvolvido --------- 
+
+int idade = 20;
+int idadeMinima = 18;
+boolean podeEntrar = idade >= idadeMinima;
+System.out.println("Idade informada: " + idade);
+System.out.println("Pode entrar: " + podeEntrar);
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- 2. Explicação da IA (Linha) --------- 
+
+// Declara uma variável inteira chamada idade com valor 20.
+int idade = 20;
+
+// Define a idade mínima necessária para entrar.
+int idadeMinima = 18;
+
+// Compara as idades usando >= (maior ou igual).
+// O resultado será true (verdadeiro) ou false (falso).
+boolean podeEntrar = idade >= idadeMinima;
+
+// Exibe a idade informada no terminal.
+System.out.println("Idade informada: " + idade);
+
+// Exibe se a idade atende ao requisito mínimo.
+System.out.println("Pode entrar: " + podeEntrar);
+
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- 3. Avaliando a explicação recebida: --------- 
+
+Ao pedir para explicar, mencionei no prompt para me responder via comentário, linha por linha.
+
+Por conta disso, a IA acabou apenas me demonstrando o básico de cada linha, demonstrando apenas a função.
+
+Mas, quando foi pedido a ela que tivesse um grau de explicação melhor, perguntando como poderia ser feito, pedidos de rascunhos, instrução de me explicar como se fosse um colega, instrutor ou monitor, ela retornou mais informações interessantes para o aprendizado.
+
+Mas um ponto em que a IA explicou corretamente, mas poderia ter aprofundado mais, seria o trecho em que existe o operador relacional de comparação ( >= ). Nesse trecho, facilmente poderia ter explicado como a ordem, os valores e as variáveis envolvidas poderiam alterar o resultado da comparação e influenciar a execução do programa.
+
+
+
+
+..........................................................................
+
+
+
+
+--------- 4. Noticia: --------- 
+
+Em setembro de 2026, a Oracle lançou o Java 27, trazendo algumas novidades na segurança, como a criptografia pós-quântica. Essa tecnologia busca proteger os sistemas contra possíveis ataques de computadores quânticos no futuro. Achei interessante porque mostra que o Java continua sendo atualizado para acompanhar as novas tecnologias e melhorar a segurança dos programas.
+
+Fontes:
+
+- https://blogs.oracle.com/java/the-arrival-of-java-27?utm_source=chatgpt.com
+
+- https://tecnoblog.net/noticias/java-27-e-lancado-com-foco-em-criptografia-pos-quantica-veja-as-novidades/
+
+
+
+
+
+..........................................................................
+
+
+Daqui em diante, estão os conteúdos que fui estudando durante a realização do TP para entender melhor os conceitos de Java. Também incluí algumas anotações feitas durante as aulas.
+
+--------- Conteúdo Estudado em Paralelo --------- 
+/* 
+
+[Acesso][Tipo][Nome da Classe]
+  public class Exercicio4 {
+      public static void main(String[] args) {
+
+*/
+
+
+public       = Modificador de acesso (classe pública).
+class        = Palavra-chave para declarar uma classe.
+exercicio4   = Nome da classe.
+
+public       = Modificador de acesso do método.
+static       = Permite executar o método sem criar um objeto.
+void         = Indica que o método não retorna um valor.
+main         = Nome do método principal, ponto de entrada do programa.
+String[]     = Array (vetor) de textos.
+args         = Nome da variável que recebe os argumentos da linha de comando.
+
+{ }          = Delimitam um bloco de código.
+( )          = Delimitam os parâmetros do método.
+;            = Indica o fim de uma instrução.
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- Observações sobre IntelliJ IDEA --------- 
+
+
+Observações sobre a execução do arquivo ao longo do primeiro contato com o IntelliJ IDEA:
+
+Para executar o código Java na IDE, é necessário criar um arquivo com a extensão `.java`, preferencialmente dentro da pasta `src` (source / fonte / origem), onde ficam os arquivos de código-fonte do projeto. O nome do arquivo deve ser igual ao nome da classe pública declarada nele. Além disso, a classe deve conter o método `public static void main(String[] args)`, que é o ponto de entrada para a execução do programa.
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- Executar sem Metodo ---------
+
+Ao tentar executar o código sem o método main, ocorreu um erro, pois as instruções estavam soltas, fora de uma classe e de um método.
+
+Entendi que, para executar o programa da maneira tradicional, precisamos colocar as instruções dentro do método main, que fica dentro de uma classe.
+
+Porém, para apenas compilar uma classe Java, não é obrigatório ter o método main.
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- Conteúdo Sobre: Acesso --------- 
+
+O Java podem ter 4 níveis de acesso:
+
+// Public: Acesso Total, qualquer classe de qualquer pasta do projeto pode ver e usar.
+
+// Protected: Acesso Restrito a Herança. Apenas Classes da mesma pasta ou filhas podem acessar.
+
+// Sem palavra: So as classes que estão na mesma pasta podem interagir com ela.
+
+// Private: Acesso exclusivo, apenas o código que esta dentro das { } da própria chave pode ver.
+
+// void: Indica que o método não retorna nenhum valor.
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- Conteúdo Sobre: Classes --------- 
+
+Sobre as classes:
+
+// Cenário 1: Uma classe comum e acessível por todo o projeto
+public class Exercicio4 { ... }
+
+// Cenário 2: Uma classe que só funciona dentro da pasta atual
+class CalculadoraInterna { ... }
+
+// Cenário 3: Uma classe pública que não pode ter "classes filhas" (herança)
+public final class SegurancaSistema { ... }
+
+// Cenário 4: Uma classe que serve apenas de modelo para outras
+public abstract class Animal { ... }
+
+
+
+
+..........................................................................
+
+
+
+
+
+--------- Conteúdo Sobre: Estrutura de pastas de um projeto Java --------- 
+
+Ao criar um projeto Java no IntelliJ IDEA, percebi que é importante entender como funciona a organização das pastas e dos arquivos.
+
+A pasta `src`, que vem da palavra *source* (fonte), é onde normalmente ficam os códigos-fonte do projeto. Dentro dela, podemos criar uma **Java Class**, que gera um arquivo com a extensão `.java`.
+
+Por exemplo, ao criar uma classe chamada `Exercicio4`, a IDE gera o arquivo `Exercicio4.java`. O nome do arquivo precisa ser igual ao nome da classe pública declarada dentro dele.
+
+Para executar um programa Java tradicional, utilizamos o método `public static void main(String[] args)`, que indica por onde a execução começa.
+
+Quando compilamos o arquivo `.java`, o compilador `javac` transforma o código-fonte em um arquivo `.class`, que contém o *bytecode*. Esse bytecode é executado pela JVM (Java Virtual Machine).
+
+Assim, entendi que a organização das pastas ajuda a manter o projeto estruturado, enquanto os arquivos `.java` armazenam o código que escrevemos e os arquivos `.class` contêm o resultado da compilação.
+
+
+MeuProjeto/
+├── .idea/                 # Configurações do IntelliJ
+├── src/                   # Código-fonte
+│   ├── InfoAmbiente.java  # Classe Java
+│   └── Exercicio4.java    # Outra classe Java
+├── out/                   # Arquivos compilados pela IDE
+│   └── production/
+│       └── MeuProjeto/
+│           └── Exercicio4.class
+└── MeuProjeto.iml         # Configuração do módulo, se existir
+
+
+
+
+..........................................................................
+
+
+
+
+
+
+--------- Conteúdo Sobre: Padrões de Nomenclatura em Java ---------
+
+Em Java, existem 3 padrões principais para nomear classes,
+variáveis, métodos e constantes.
+
+Esses padrões ajudam a organizar o código e facilitam a leitura.
+
+
+1. PascalCase - Classes
+
+A primeira letra de cada palavra começa com maiúscula. As palavras ficam juntas, sem espaços.
+
+- Exemplos:
+public class Exercicio4 { }
+public class SegurancaSistema { }
+class CalculadoraInterna { }
+
+Correto: SegurancaSistema
+
+Fora do padrão: segurancaSistema
+
+
+2. camelCase - Variáveis e Métodos
+
+- A primeira palavra começa com letra minúscula.
+- As próximas palavras começam com letra maiúscula.
+- Não utilizamos espaços entre as palavras.
+
+- Exemplos:
+int idadeMinima = 18;
+boolean podeEntrar = true;
+double valorTotal = 150.50;
+
+- Exemplos de nomes de métodos:
+calcularIdade()
+verificarEntrada()
+
+Correto: idadeMinima
+
+Fora do padrão: IdadeMinima
+
+
+3. UPPER_SNAKE_CASE - Constantes
+
+- Todas as letras são maiúsculas.
+- As palavras são separadas por underline (_).
+- Normalmente utilizamos static final para constantes de classe.
+
+- Exemplos:
+static final int IDADE_MINIMA = 18;
+static final double TAXA_CONVERSAO = 1.60934;
+
+Correto: IDADE_MINIMA
+
+Fora do padrão: idadeMinima
+
+
+--------- Resumo ---------
+
+PascalCase      = Classes
+
+camelCase       = Variáveis e métodos
+
+UPPER_SNAKE_CASE = Constantes
+
+
+--------- Observações ---------
+
+Java diferencia letras maiúsculas de minúsculas.
+
+Isso é chamado de Case Sensitive.
+
+idadeMinima e IdadeMinima são nomes diferentes.
+
+Esses padrões são convenções de programação. Não são regras obrigatórias da linguagem.
+
+Porém, seguir esses padrões facilita a leitura, a organização e a manutenção do código.
+
+IMPORTANTE:
+
+O nome de um arquivo .java que contém uma classe pública deve corresponder exatamente ao nome dessa classe.
+
+Exemplo:
+
+Classe: public class Exercicio4
+
+Arquivo: Exercicio4.java

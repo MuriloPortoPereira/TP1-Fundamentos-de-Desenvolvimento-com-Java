@@ -1,0 +1,46 @@
+~ > cd Desktop/TP1\ -\ Fundamentos\ de\ Desenvolvimento\ com\ Java/Exercicio\ 3
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3 on git:master !+? > pwd
+/Users/muriloportopereira/Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3 on git:master !+? > ls
+ selecionar_jdk.txt
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3 on git:master !+? > export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3 on git:master !+? > java --version
+openjdk 21.0.13 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 3 on git:master !+? > jshell        
+|  Welcome to JShell -- Version 21.0.13
+|  For an introduction type: /help intro
+
+jshell> int quantidadeProdutos = 10;
+quantidadeProdutos ==> 10
+
+jshell> doublee precoUnitario = 99.90;
+|  Error:
+|  cannot find symbol
+|    symbol:   class doublee
+|  doublee precoUnitario = 99.90;
+|  ^-----^
+
+jshell> double precoUnitario = 99.90;
+precoUnitario ==> 99.9
+
+jshell> boolean pagamentoAprovado = true;
+pagamentoAprovado ==> true
+
+jshell> quantidadeProdutos * precoUnitario
+$4 ==> 999.0
+
+jshell> quantidadeProdutos + 1
+$5 ==> 11
+
+jshell> quantidadeProdutos > 5
+$6 ==> true
+
+jshell> 

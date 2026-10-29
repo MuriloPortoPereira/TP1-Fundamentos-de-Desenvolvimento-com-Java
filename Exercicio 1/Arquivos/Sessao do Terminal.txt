@@ -1,0 +1,75 @@
+Sessão do Terminal:
+
+Last login: Thu Oct 22 11:16:54 on ttys000
+
+~ > pwd
+/Users/muriloportopereira
+
+~ > cd Desktop/TP1\ -\ Fundamentos\ de\ Desenvolvimento\ com\ Java/Exercicio\ 1
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master + > LS
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master + > touch exercicio1.txt
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master +? > ls
+ exercicio1.txt
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master +? > cd Desktop/TP1\ -\ Fundamentos\ de\ Desenvolvimento\ com\ Java
+cd: no such file or directory: Desktop/TP1 - Fundamentos de Desenvolvimento com Java
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master !+? > cd Desktop/TP1\ -\ Fundamentos\ de\ Desenvolvimento\ com\ Java\ 
+∙ ls
+cd: no such file or directory: Desktop/TP1 - Fundamentos de Desenvolvimento com Javals
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master !+? > ls
+ exercicio1.txt
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master !+? > c..                                                            
+zsh: command not found: c..
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master !+? > cd..                                                           
+zsh: command not found: cd..
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/Exercicio 1 on git:master !+? > cd ..                                                          
+
+~/Desktop/TP1 - Fundamentos de Desenvolvimento com Java on git:master !+? > ls
+ 'Exercicio 1'   'TP1 - Fundamentos de Desenvolvimento com Java.iml'
+󰣞 src
+
+~/Desktop/TP1 - Fundamentos de Desenvolvimento com Java on git:master !+? > pwe
+zsh: command not found: pwe
+
+~/Desktop/TP1 - Fundamentos de Desenvolvimento com Java on git:master !+? > cd scr           
+cd: no such file or directory: scr
+
+~/Desktop/TP1 - Fundamentos de Desenvolvimento com Java on git:master !+? > ;s
+zsh: command not found: s
+
+~/Desktop/TP1 - Fundamentos de Desenvolvimento com Java on git:master !+? > cd src
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > ls
+ InfoAmbiente.java
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > javac InfoAmbiente.java 
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > java InfoAmbiente      
+Sistema Operacional: Mac OS X
+Versão do Java: 26.0.2
+Diretorio Atual: /Users/muriloportopereira/Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > ls
+ InfoAmbiente.class   InfoAmbiente.java
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > javac InfoAmbiente.java
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > javac InfoAmbiente.java
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > java InfoAmbiente      
+Sistema Operacional: Mac OS X
+Versão do Java: 21.0.13
+Diretorio Atual: /Users/muriloportopereira/Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src
+
+Desktop/TP1 - Fundamentos de Desenvolvimento com Java/src on git:master !+? > 
